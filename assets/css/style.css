@@ -6,27 +6,67 @@
 /* body style */
 
 body {
-    background-color: white;
+    background-color: rgb(179, 179, 179);
 }
 /* header style & nav style art */
 
-header {
-    padding: 20px;
+.header {
+    padding: 30px;
     font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: grey;
+}
+
+h1 span {
     background-color: grey;
-    color: turquoise;
+    color: black;
+    padding: 0 0 0 2px;
+
+}
+
+header h1 {
+    font-size: 55px;
 }
 
 .header nav {
-
-    padding-top: 15px;
-    margin-right: 20px;
+    padding-top: 0px;
+    margin-right: 30px;
     float: right;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 30px;
+    color: grey;
+    border-bottom: grey;
 }
 
 .header nav ul li {
     display: inline-block;
     margin-left: 30px;
+}
+
+a {
+    position: relative;
+    color: grey;
+    border-bottom: 20px;
+}
+
+/* add hero style */
+
+.hero {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/lucidchart-edu-lesson-plans-header.png");
+    position: relative;
+}
+
+.hero h2 {
+    position: absolute;
+    font-size: 45px;
+    bottom: 8px;
+    margin-left: 75%;
+}
+
+.hero h2 span {
+    background-color: grey;
+    font-size: larger;
 }
