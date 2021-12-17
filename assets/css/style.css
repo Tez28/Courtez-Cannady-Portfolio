@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0s;
     padding: 0;
 }
 /* body style */
@@ -21,27 +21,20 @@ h1 span {
     background-color: grey;
     color: black;
     padding: 0 0 0 2px;
-
-}
-
-header h1 {
     font-size: 55px;
 }
+
 
 .header nav {
     padding-top: 0px;
     margin-right: 30px;
-    float: right;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     color: grey;
     border-bottom: grey;
+    float: right;
 }
 
-.header nav ul li {
-    display: inline-block;
-    margin-left: 30px;
-}
 
 a {
     position: relative;
@@ -54,7 +47,7 @@ a {
 .hero {
     height: 500px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     background-image: url("../images/lucidchart-edu-lesson-plans-header.png");
     position: relative;
 }
@@ -63,10 +56,83 @@ a {
     position: absolute;
     font-size: 45px;
     bottom: 8px;
-    margin-left: 75%;
+    margin-left: 93%;
 }
 
 .hero h2 span {
     background-color: grey;
-    font-size: larger;
+    font-size: 55px;
 }
+
+/* add style body */
+
+.about-me {
+    width: 100%;
+    display: inline;
+    border: 20px;
+    margin-bottom: 200px;
+    height: 60%;
+    margin-top: 100%;
+    padding-top: 30px;
+}
+.about-me img h1 p {
+    border-bottom: solid black 100px ;
+    margin: 100px
+}
+
+.about-me p {
+    display: inline;
+    font-size: 35px;
+    text-align: center;
+    float: inline;
+
+}
+
+.about-me img {
+    max-height: 600px;
+    float: right;    
+    margin: 0 0 0 15px;
+    display: inline;
+}
+
+.about-me h1 {
+    float: left;
+    font-size: 65px;
+    text-align: right;
+    padding: 100px;
+    margin-right: 20px 0;
+    display: inline;
+}
+
+
+
+/*add style work section */
+
+
+section .projects {
+    width: 100%;
+    display: inline;
+    border: 20px;
+    margin-bottom: 200px;
+    height: 60%;
+    margin-top: 100%;
+    padding-top: 30px;
+}
+
+section h1 {
+    float: left;
+    font-size: 65px;
+    text-align: right;
+    padding: 100px;
+    margin-right: 20px 0;
+    display: inline;
+}
+
+
+
+
+
+
+
+/* add style contact */
+
