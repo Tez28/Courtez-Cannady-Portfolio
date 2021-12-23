@@ -7,40 +7,51 @@
 
 body {
     background-color: rgb(179, 179, 179);
+    width: 100%;
 }
 /* header style & nav style art */
 
 .header {
+    width: 100%;
     padding: 30px;
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
     color: grey;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* new test */
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: sticky;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 9999;
 }
 
 h1 span {
     background-color: grey;
     color: black;
-    padding: 0 0 0 2px;
     font-size: 55px;
 }
 
 
-.header nav {
+ nav {
     padding-top: 0px;
-    margin-right: 30px;
+    margin-left: 70%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     color: grey;
     border-bottom: grey;
-    float: right;
+    /* display: inline-flex; */
+    /* align-items: flex-end; */
 }
 
 
 a {
-    position: relative;
     color: grey;
     border-bottom: 20px;
 }
+
 
 /* add hero style */
 
@@ -49,90 +60,160 @@ a {
     width: 100%;
     margin-bottom: 30px;
     background-image: url("../images/lucidchart-edu-lesson-plans-header.png");
-    position: relative;
+    position: relative
 }
 
 .hero h2 {
     position: absolute;
-    font-size: 45px;
+    font-size: 30px;
     bottom: 8px;
-    margin-left: 93%;
+    margin-left: 80%;
 }
 
 .hero h2 span {
     background-color: grey;
-    font-size: 55px;
+    font-size: 40px;
 }
 
 /* add style body */
 
 .about-me {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    display: inline;
-    border: 20px;
-    margin-bottom: 200px;
-    height: 60%;
-    margin-top: 100%;
-    padding-top: 30px;
-}
-.about-me img h1 p {
-    border-bottom: solid black 100px ;
-    margin: 100px
 }
 
-.about-me p {
-    display: inline;
-    font-size: 35px;
-    text-align: center;
-    float: inline;
-
+ p {
+    font-size: 25px;
+    justify-content: center;
+    padding: 10px 10px;
+    width: 60%;
+    float: left;
 }
 
-.about-me img {
-    max-height: 600px;
-    float: right;    
-    margin: 0 0 0 15px;
-    display: inline;
+.pic-me {
+    width: 20%;
+
+    float: left;
 }
 
 .about-me h1 {
-    float: left;
     font-size: 65px;
-    text-align: right;
-    padding: 100px;
-    margin-right: 20px 0;
-    display: inline;
+    text-align: center;
+    width: 20%;
+    float: left;
 }
+
+
 
 
 
 /*add style work section */
 
+.work {
+    display: inline-flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 30px;
+    border: 20px;
+    width: 100%;
+}
+
 
 section .projects {
     width: 100%;
-    display: inline;
+    display: flex;
     border: 20px;
     margin-bottom: 200px;
-    height: 60%;
-    margin-top: 100%;
+    margin-top: 200px;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-section h1 {
+.work h1 {
     float: left;
     font-size: 65px;
-    text-align: right;
-    padding: 100px;
-    margin-right: 20px 0;
-    display: inline;
+    text-align: left;
+    /* padding: 100px;
+    margin-right: 100px */
+}   
+
+.link1 {
+    max-height: 300px;
+    flex-basis: 100%;
+    float: right;    
+    display: flex;
+}
+
+.link2 {
+    max-height: 105px;
+    min-height: 105px;
+    flex-basis: 50%;
+    float: right;    
+    display: flex;
+    max-width: 375px;
 }
 
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    max-width: 45%;
 
-
+}
 
 
 
 /* add style contact */
 
+.contact-me {
+    width: 100%;
+    color: black;
+    font-size: 45px;
+    flex-wrap: wrap;
+    display: inline-flex;
+}
+
+.contact-me h1 {
+    font-size: 45px;
+    float: left;
+    padding-right: 100px;
+}
+
+.locale {
+    color: black;
+    font-size: 45px;
+    float: left;
+    padding-top: 35px;
+}
+
+/* media query for smaller devices */
+
+@media screen and (max-width : 980px){
+    .header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        width: max-content;
+    }
+    
+    h1 span {
+        width: 100%;
+        text-align: left;
+    }
+    nav {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: left;
+      }
+
+    
+    
+}
+
+@media screen and (max-width : 750px){
+    
+}

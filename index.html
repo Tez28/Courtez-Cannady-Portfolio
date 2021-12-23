@@ -19,10 +19,10 @@
 
         <!-- insert nav -->
         <nav>
-           <a href="#About-Me">About Me</a>
-           <a href="#Work">Work</a>
-           <a href="#Contact-Me">Contact Me</a>
-           <a href="Resume">Resume</a>
+           <a href="#about-me">About Me</a>
+           <a href="#work">Work</a>
+           <a href="#contact-me">Contact Me</a>
+           <a href="resume">Resume</a>
         </nav>
    </header>
     <!-- end header -->
@@ -32,41 +32,43 @@
        <h2><span>C4ISR Engineering</span></h2>
    </section>
     
-   <section class="content">
-      <article id="about-me" class="about-me">
-         <h1>About Me</h1>  
-         <img src="./assets/images/IMG_0073.jpg" class="float-right" alt="Picture of myself" />    
-         <p>
-            Hello! My name is Courtez M. Cannady but most people just call me Tez. I was born in Charleston,SC and I am a Marine Veteran and I hold a 
-            Bachelors of Science degreee in Information Technology Management from Trident University International. Throughout my career journey I have 
-            worked with several information technology systems to include radio and satellite communications systems while active duty in the Marine Corps and design 
-            some as a contractor. Currently I am a Senior Systems Engineer supporting government contracts. I have had the pleasure of supporting various DoD programs 
-            in systems design and acquisition. I am working towards being a product manager in the near future by picking up new skills. I currently hold certifications 
-            in AWS, Certified Cloud Practitioner and Certified Solutions Architect, and an ITIL v4 Foundation certification.  
-         </p>
+   <section class="about-me" id="about-me">
+      <article>
+         <h1>About Me</h1>
+         <div class="life"> 
+            <p>
+               Hello! My name is Courtez M. Cannady but most people just call me Tez. I was born in Charleston,SC and I am a Marine Veteran and I hold a 
+               Bachelors of Science degree in Information Technology Management from Trident University International. Throughout my career journey I have 
+               worked with several information technology systems to include radio and satellite communications systems while active duty in the Marine Corps and design 
+               some as a contractor. Currently I am a Senior Systems Engineer supporting government contracts. I have had the pleasure of supporting various DoD programs 
+               in systems design and acquisition. I am working towards being a product manager in the near future by picking up new skills. I currently hold certifications 
+               in AWS, Certified Cloud Practitioner and Certified Solutions Architect, and an ITIL v4 Foundation certification.  
+            </p>
+            <img src="./assets/images/IMG_0073.jpg" class="pic-me" alt="Picture of myself" />
+         </div>   
       </article>           
    </section>
 
     <!-- add work section -->
-   <section class="projects" id="projects">
-      <h1>Work</h1>
-      <img src="./assets/images/Indigo-Inn-Located-Inn-Downtown-Charleston-South-Carolina-1-landscape.jpeg" alt="Indigo Inn Charleston South Carolina">
-      <div class="bottom-left"><h2>Surf Report</h2><h3>MERN Stack</h3></div>            
-      <img src="./assets/images/led.jpeg" alt="LED Wall" />
-      <div class="bottom-left"><h2>LED Wall</h2><h3>Node/IoT</h3></div>
-      <img src="./assets/images/pcs.jpeg" alt="Desktop" />
-      <div class="bottom-left"><h2>Calulator</h2><h3>React/Javascript/CSS</h3></div>
-      <img src="./assets/images/engineering.jpeg" alt="Brain lit up by lightbulb thinking" />
-      <div class="bottom-left"><h2>Pastel Puzzles</h2><h3>MERN Stack</h3></div>
-      <a href="https://tez28.github.io/run-buddy/" target="_blank">
-      <img src="./assets/images/Screen Shot 2021-12-15 at 4.27.43 PM.png" alt="Run Buddy link" /></a>
-      <div class="bottom-left"><h2>Run Buddy</h2><h4>HTML/CSS></h4></div>    
+   <section class="work" id="work">
+      <main class="projects">
+         <h1>Work</h1>
+         <div class="container">
+            <img src="./assets/images/Indigo-Inn-Located-Inn-Downtown-Charleston-South-Carolina-1-landscape.jpeg" class="link1" id="indigo" alt="Indigo Inn Charleston South Carolina">                                           
+            <img src="./assets/images/led.jpeg" class="link2" id="img2" alt="LED Wall" /> 
+            <img src="./assets/images/pcs.jpeg" class="link2" id="img2" alt="Desktop" />
+            <img src="./assets/images/engineering.jpeg" class="link2" id="img2" alt="Brain lit up by lightbulb thinking" />
+            <a href="https://tez28.github.io/run-buddy/" target="_blank">
+            <img src="./assets/images/Screen Shot 2021-12-15 at 4.27.43 PM.png" class="link2" id="img3" alt="Run Buddy link" /></a> 
+         </div>   
+      </main>    
    </section>
 
     <!-- add contact section -->
 
-   <section id="find-me" class="contact">
-      <address>
+   <section class="contact-me" id="contact-me">
+      <h1>Contact Me:</h1>
+      <address class="locale">
          P:540-287-6266
          E: <a href="courtezcannady@gmail.com">courtezcannady@gmail.com</a>
          <a href="https://github.com/Tez28">GitHub</a>
