@@ -17,9 +17,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
     color: grey;
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* new test */
     display: inline-flex;
     flex-wrap: wrap;
     position: sticky;
@@ -36,14 +33,13 @@ h1 span {
 
 
  nav {
-    padding-top: 0px;
+    /* padding-top: 0px; */
     margin-left: 70%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     color: grey;
     border-bottom: grey;
-    /* display: inline-flex; */
-    /* align-items: flex-end; */
+
 }
 
 
@@ -63,16 +59,12 @@ a {
     position: relative
 }
 
-.hero h2 {
-    position: absolute;
-    font-size: 30px;
-    bottom: 8px;
-    margin-left: 80%;
-}
-
 .hero h2 span {
     background-color: grey;
     font-size: 40px;
+    position: absolute;
+    bottom: 8px;
+    margin-left: 75%;
 }
 
 /* add style body */
@@ -84,7 +76,7 @@ a {
     width: 100%;
 }
 
- p {
+p {
     font-size: 25px;
     justify-content: center;
     padding: 10px 10px;
@@ -190,7 +182,7 @@ section .projects {
     padding-top: 35px;
 }
 
-/* media query for smaller devices */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width : 980px){
     .header {
@@ -204,11 +196,28 @@ section .projects {
         width: 100%;
         text-align: left;
     }
+    
     nav {
         margin-top: 20px;
         width: 100%;
         justify-content: left;
-      }
+    }
+    .hero {
+        width: 993px;
+    }
+
+    .hero h2 span {
+        justify-content: center;
+
+    }
+
+    .about-me {
+        justify-content: center;
+
+    }
+
+
+
 
     
     
