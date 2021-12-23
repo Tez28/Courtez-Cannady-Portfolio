@@ -16,7 +16,7 @@ body {
     padding: 30px;
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
-    color: grey;
+    /* color: grey; */
     display: inline-flex;
     flex-wrap: wrap;
     position: sticky;
@@ -54,7 +54,7 @@ a {
 /* add hero style */
 
 .hero {
-    height: 500px;
+    height: 600px;
     width: 100%;
     margin-bottom: 30px;
     background-image: url("../images/lucidchart-edu-lesson-plans-header.png");
@@ -73,36 +73,45 @@ a {
 
 article {
     display: inline-flex;
-    flex-wrap: wrap;
+    flex-wrap: left;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+} 
+
+.about-me h1 {
+    font-size: 65px;
+    text-align: left;
+    /* width: 20%; */
+    float: left;
+    padding-left: 30px;
+    padding-right: 300px;
 }
 
 p {
     font-size: 25px;
-    /* justify-content: center; */
+    /* justify-content: left; */
     padding: 10px 10px;
     width: 50%;
     float: left;
+    flex-wrap: wrap;
+
 }
 
 .pic-me {
     width: 20%;
+    float: right;
 
-    flex-wrap: left;
-}
-
-.about-me h1 {
-    font-size: 65px;
-    text-align: center;
-    width: 30%;
-    float: left;
 }
 
 div .life {
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 50%;
+    
 }
+
+
+
 
 
 
@@ -139,15 +148,15 @@ section .projects {
 }   
 
 .link1 {
-    max-height: 300px;
+    max-height: 600px;
     flex-basis: 100%;
     float: right;    
     display: flex;
 }
 
 .link2 {
-    max-height: 105px;
-    min-height: 105px;
+    max-height: 350px;
+    min-height: 150px;
     flex-basis: 50%;
     float: right;    
     display: flex;
@@ -157,7 +166,7 @@ section .projects {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     margin-left: 15%;
     max-width: 45%;
@@ -262,3 +271,4 @@ section .projects {
     
 /* media query mobile phones */
 @media screen and (max-width: 575px)
+    .
