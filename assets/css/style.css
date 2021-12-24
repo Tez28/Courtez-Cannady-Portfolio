@@ -32,14 +32,14 @@ h1 span {
 
 
 header nav {
-width: 100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: right;
-font-family: 'Times New Roman', Times, serif;
-font-size: 30px;
-color: grey;
-border-bottom: grey;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: grey;
+    border-bottom: grey;
 
 }
 
@@ -47,6 +47,7 @@ border-bottom: grey;
 a {
     color: grey;
     border-bottom: 30px;
+    padding-right: 5px;
 }
 
 
