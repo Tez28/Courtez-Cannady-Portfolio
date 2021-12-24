@@ -117,7 +117,6 @@ div .life {
 .work {
     display: inline-flex;
     justify-content: center;
-    /* align-items: center; */
     padding: 30px;
     border: 20px;
     width: 100%;
