@@ -13,13 +13,9 @@ body {
 
 .header {
     width: 100%;
-    padding: 30px;
+    padding: 50px;
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
-    color: grey;
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* new test */
     display: inline-flex;
     flex-wrap: wrap;
     position: sticky;
@@ -35,76 +31,83 @@ h1 span {
 }
 
 
- nav {
-    padding-top: 0px;
-    margin-left: 70%;
+header nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     color: grey;
     border-bottom: grey;
-    /* display: inline-flex; */
-    /* align-items: flex-end; */
+
 }
 
 
 a {
     color: grey;
-    border-bottom: 20px;
+    border-bottom: 30px;
 }
 
 
 /* add hero style */
 
 .hero {
-    height: 500px;
+    height: 600px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     background-image: url("../images/lucidchart-edu-lesson-plans-header.png");
-    position: relative
-}
-
-.hero h2 {
-    position: absolute;
-    font-size: 30px;
-    bottom: 8px;
-    margin-left: 80%;
+    position: relative;
+    padding: 100px;
 }
 
 .hero h2 span {
     background-color: grey;
-    font-size: 40px;
+    font-size: 45px;
+    position: absolute;
+    bottom: 8px;
+    margin-left: 70%;
 }
 
 /* add style body */
 
-.about-me {
+article {
     display: inline-flex;
-    justify-content: center;
+    flex-wrap: left;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+} 
+
+.about-me h1 {
+    font-size: 65px;
+    text-align: left;
+    /* width: 20%; */
+    float: left;
+    padding-left: 30px;
+    padding-right: 300px;
 }
 
- p {
-    font-size: 25px;
-    justify-content: center;
+p {
+    font-size: 35px;
     padding: 10px 10px;
-    width: 60%;
+    width: 50%;
     float: left;
+    flex-wrap: wrap;
+
 }
 
 .pic-me {
     width: 20%;
+    float: right;
 
-    float: left;
 }
 
-.about-me h1 {
-    font-size: 65px;
-    text-align: center;
-    width: 20%;
-    float: left;
+div .life {
+    justify-content: space-around;
+    width: 50%;
+    
 }
-
 
 
 
@@ -120,6 +123,9 @@ a {
     width: 100%;
 }
 
+main .projects {
+    width: 100%;
+}
 
 section .projects {
     width: 100%;
@@ -131,7 +137,7 @@ section .projects {
     padding-bottom: 30px;
 }
 
-.work h1 {
+.projects h1 {
     float: left;
     font-size: 65px;
     text-align: left;
@@ -140,25 +146,25 @@ section .projects {
 }   
 
 .link1 {
-    max-height: 300px;
+    max-height: 500px;
     flex-basis: 100%;
     float: right;    
     display: flex;
+    width: 25%;
 }
 
 .link2 {
-    max-height: 105px;
-    min-height: 105px;
+    max-height: 150px;
+    min-height: 150px;
     flex-basis: 50%;
     float: right;    
     display: flex;
-    max-width: 375px;
 }
 
 
 .container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     margin-left: 15%;
     max-width: 45%;
@@ -190,7 +196,7 @@ section .projects {
     padding-top: 35px;
 }
 
-/* media query for smaller devices */
+/* media query smaller desktop screens and smaller */
 
 @media screen and (max-width : 980px){
     .header {
@@ -204,16 +210,63 @@ section .projects {
         width: 100%;
         text-align: left;
     }
+    
     nav {
         margin-top: 20px;
         width: 100%;
         justify-content: left;
-      }
+    }
+    .hero {
+        width: 993px;
+    }
 
-    
-    
+    .hero h2 span {
+        justify-content: center;
+
+    }
+
+    .about-me {
+        justify-content: center;
+
+    }
 }
+
+/* media query tablets or smaller */
 
 @media screen and (max-width : 750px){
+    .header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        width: max-content;
+    }
     
+    h1 span {
+        width: 100%;
+        text-align: left;
+    }
+    
+    nav {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: left;
+    }
+    .hero {
+        width: 993px;
+    }
+
+    .hero h2 span {
+        justify-content: center;
+
+    }
+
+    .about-me {
+        justify-content: center;
+
+    }
+
 }
+    
+/* media query mobile phones */
+@media screen and (max-width: 575px)
+    .
