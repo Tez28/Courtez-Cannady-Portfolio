@@ -13,10 +13,9 @@ body {
 
 .header {
     width: 100%;
-    padding: 30px;
+    padding: 50px;
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
-    /* color: grey; */
     display: inline-flex;
     flex-wrap: wrap;
     position: sticky;
@@ -47,7 +46,7 @@ border-bottom: grey;
 
 a {
     color: grey;
-    border-bottom: 20px;
+    border-bottom: 30px;
 }
 
 
@@ -56,17 +55,18 @@ a {
 .hero {
     height: 600px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     background-image: url("../images/lucidchart-edu-lesson-plans-header.png");
-    position: relative
+    position: relative;
+    padding: 100px;
 }
 
 .hero h2 span {
     background-color: grey;
-    font-size: 40px;
+    font-size: 45px;
     position: absolute;
     bottom: 8px;
-    margin-left: 75%;
+    margin-left: 70%;
 }
 
 /* add style body */
@@ -89,8 +89,7 @@ article {
 }
 
 p {
-    font-size: 25px;
-    /* justify-content: left; */
+    font-size: 35px;
     padding: 10px 10px;
     width: 50%;
     float: left;
@@ -113,10 +112,6 @@ div .life {
 
 
 
-
-
-
-
 /*add style work section */
 
 .work {
@@ -128,6 +123,9 @@ div .life {
     width: 100%;
 }
 
+main .projects {
+    width: 100%;
+}
 
 section .projects {
     width: 100%;
@@ -139,7 +137,7 @@ section .projects {
     padding-bottom: 30px;
 }
 
-.work h1 {
+.projects h1 {
     float: left;
     font-size: 65px;
     text-align: left;
@@ -148,19 +146,19 @@ section .projects {
 }   
 
 .link1 {
-    max-height: 600px;
+    max-height: 500px;
     flex-basis: 100%;
     float: right;    
     display: flex;
+    width: 25%;
 }
 
 .link2 {
-    max-height: 350px;
+    max-height: 150px;
     min-height: 150px;
     flex-basis: 50%;
     float: right;    
     display: flex;
-    max-width: 375px;
 }
 
 
